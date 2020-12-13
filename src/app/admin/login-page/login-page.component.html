@@ -18,7 +18,7 @@
   <div class="form-control"
        [ngClass]="{invalid: form.get('password').touched && form.get('password').invalid}">
     <label for="password">Пароль:</label>
-    <input type="text" id="password" formControlName="password">
+    <input type="password" id="password" formControlName="password">
     <div *ngIf="form.get('password').touched && form.get('password').invalid" class="validation" class="validation">
       <small *ngIf="form.get('password').errors.required">
         Введите пароль
@@ -31,7 +31,7 @@
   </div>
   <button
     type="submit" class="btn bg-primary"
-    [attr.disabled]="form.invalid">
+    [disabled]="form.invalid">
     Войти
   </button>
 </form>
