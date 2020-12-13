@@ -8,3 +8,11 @@ export interface FbAuthResponse {
   idToken: string;
   expiresIn: string;
 }
+
+export interface Post {
+  id?: string;
+  author: string;
+  title: string;
+  text: string;
+  date: Date;
+}
