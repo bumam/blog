@@ -8,12 +8,9 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { CreatePageComponent } from './create-page/create-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
-import { AuthService } from './shared/services/auth.service';
 import {SharedModule} from '../shared/components/shared.module';
 import {AuthGuard} from './shared/services/auth.guard';
 
-// @ts-ignore
-// @ts-ignore
 @NgModule({
   imports: [
     CommonModule,
@@ -36,7 +33,7 @@ import {AuthGuard} from './shared/services/auth.guard';
     DashboardPageComponent,
     CreatePageComponent,
     EditPageComponent],
-  providers: [AuthService, AuthGuard]
+  providers: [AuthGuard]
 })
 
 // @ts-ignore
